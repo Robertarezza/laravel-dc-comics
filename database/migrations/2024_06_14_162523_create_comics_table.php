@@ -19,7 +19,7 @@ return new class extends Migration
             $table->string('series')->nullable();
             $table->date('sale_date');
             $table->string('type');
-            $table->string('thumb');
+            $table->string('image');
             $table->timestamps();
         });
     }
