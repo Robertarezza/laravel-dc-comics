@@ -4,3 +4,21 @@ a{
     text-decoration: none;
     color: white;
 }
+
+.home {
+     background-image: url('/img/Comic_Book_Dash.webp');
+     background-repeat: no-repeat;
+     background-position: center center;
+     background-size: cover;
+     height: 85vh;
+    
+}
+
+.logo{
+    // filter: hue-rotate(10deg) brightness(100%) saturate(0%);
+    background-color:gray;
+}
+
+.my_nav{
+    background-color: #d7d7d7 !important;
+} 
