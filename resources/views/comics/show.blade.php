@@ -1,11 +1,9 @@
 @extends('layouts.app')
 
 @section('content')
-<div class="container">
-    <h1>Dettagli</h1>
-    
-
-        <div class="card mb-3" style="max-width: 100%;">
+<div class="container mb-5">
+    <h1>Dettagli {{$comic->title}}</h1>
+        <div class="card mb-3" style="max-width: 90%;">
             <div class="row g-0">
                 <div class="col">
                     <img src="{{$comic->image}}" class="img-fluid rounded-start" alt="...">
@@ -24,7 +22,7 @@
         </div>
     
         
-   
+   <a href="{{route('comics.index') }}" class="btn btn-success">Indietro</a>
 
 </div>
 @endsection

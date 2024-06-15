@@ -1,6 +1,7 @@
 <?php
 
 namespace App\Http\Controllers\Admin;
+use Carbon\Carbon;
 
 use App\Http\Controllers\Controller;
 use App\Models\Comic;
@@ -22,7 +23,7 @@ class ComicController extends Controller
      */
     public function create()
     {
-        //
+        return view('comics.create');
     }
 
     /**
@@ -30,7 +31,12 @@ class ComicController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $data= $request->all();
+        $comic= new Comic();
+        $comic->fill($data);
+        $comic->sale_date = Carbon::createFromFormat('d/m/Y', $request->input('sale_date'))->format('Y-m-d');
+        $comic->save();
+        return redirect()-> route('comics.show', ['comic'=>$comic->id]);
     }
 
     /**

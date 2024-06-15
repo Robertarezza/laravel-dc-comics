@@ -14,7 +14,7 @@
         </ul>
         <ul class="navbar-nav">
         <li class="nav-item">
-            <a class=" fw-bold btn btn-primary" aria-current="page" href=""> Aggiungi comics</a>
+            <a class=" fw-bold btn btn-primary" aria-current="page" href="{{route('comics.create')}}"> Aggiungi comics</a>
           </li>
         </ul>
       </div>
