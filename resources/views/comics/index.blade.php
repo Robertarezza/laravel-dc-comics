@@ -31,7 +31,7 @@
                 <td>{{$comic->sale_date}}</td>
                 <td>{{$comic->type}}</td>
                 <td>{{$comic->price}}</td>
-                <td><button type="submit" class="btn btn-success"><a href="">Dettagli</a></button></td>
+                <td><button type="submit" class="btn btn-success"><a href="{{route('comics.show', ['comic'=>$comic->id]) }}">Dettagli</a></button></td>
                 <!-- <td>{{$comic->description}}</td> -->
             </tr>
             @endforeach
