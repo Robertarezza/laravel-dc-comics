@@ -1,5 +1,10 @@
 @extends('layouts.app')
 
 @section('content')
-    <h1>Home page</h1>
+<div class="container text-center">
+    <h3>Vai all'archivio dei Fumetti</h3>
+    <a href="{{ route('comics.index') }}" class="btn btn-success">Clicca Qui</a>
+
+</div>
+    
 @endsection
