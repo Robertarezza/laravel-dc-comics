@@ -5,7 +5,7 @@
     <div class="container">
         <!-- <h1 class="m-0 p-0">Dettagli: {{$comic->title}}</h1> -->
         <div class="card mb-3" style="max-width: 60%; border: none; position: relative;
-    left: 325px; top: 280px; transform: rotate(-8deg);">
+    left: 325px; top: 260px; transform: rotate(-8deg);  background-color: inherit;">
             <div class="row g-0">
                 <div class="col">
                     <img src="{{$comic->image}}" class="img-fluid rounded-start" alt="...">
