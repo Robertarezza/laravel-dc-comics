@@ -1,3 +1,4 @@
+
 @import "~bootstrap/scss/bootstrap.scss";
 
 a{
@@ -6,7 +7,7 @@ a{
 }
 
 .home {
-     background-image: url('/img/Comic_Book_Dash.webp');
+     background-image: url('../img/Comic_Book_Dash.webp');
      background-repeat: no-repeat;
      background-position: center center;
      background-size: cover;
@@ -22,3 +23,19 @@ a{
 .my_nav{
     background-color: #d7d7d7 !important;
 } 
+
+.agg_comic:hover {
+    border-bottom: 2px solid blue;
+    padding-bottom: 25px; 
+    color: blue;
+}
+
+
+.my_show{
+    background-image: url('../img/sfondo_dett.jpg') ;
+    height: 95vh;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    background-size: cover;
+}

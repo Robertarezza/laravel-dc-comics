@@ -1,8 +1,8 @@
-<header>
+<header style="position: fix">
   <nav class="navbar navbar-expand-lg bg-light my_nav">
     <div class="container-fluid">
     <a class="navbar-brand" href="#">
-      <img src="{{ asset('img/logo.jpg') }}" alt="Bootstrap" width="85" height="50" class="logo">
+      <img src="{{ Vite::asset('resources/img/logo.jpg') }}" alt="Bootstrap" width="85" height="50" class="logo">
     </a>
       <!-- <a class="navbar-brand" href="#">Comics</a> -->
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
@@ -17,7 +17,7 @@
         </ul>
         <ul class="navbar-nav">
         <li class="nav-item">
-            <a class=" fw-bold btn btn-primary" aria-current="page" href="{{route('comics.create')}}"> Aggiungi comics</a>
+            <a class="agg_comic" aria-current="page" href="{{route('comics.create')}}" style="color: white;"> Aggiungi comics</a>
           </li>
         </ul>
       </div>
