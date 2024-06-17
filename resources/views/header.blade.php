@@ -17,7 +17,7 @@
         </ul>
         <ul class="navbar-nav">
         <li class="nav-item">
-            <a class="agg_comic" aria-current="page" href="{{route('comics.create')}}" style="color: white;"> Aggiungi comics</a>
+            <a class="agg_comic btn btn-outline-info" aria-current="page" href="{{route('comics.create')}}" style="color: white;"> <i class="fa-solid fa-file-circle-plus"></i> Aggiungi</a>
             
           </li>
         </ul>

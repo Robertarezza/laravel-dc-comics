@@ -18,15 +18,27 @@
                         <p class="card-text ">{{$comic->type}}</p>
                         <p class="card-text ">{{$comic->price}}</p>
                         <p class="card-text ">{{$comic->description}}</p>
-                        <a href="{{route('comics.edit', ['comic'=>$comic->id]) }}" class="btn btn-outline-warning">Modifica</a>
+
                     </div>
                 </div>
             </div>
+            <div class="d-flex justify-content-around mt-3 align-content-center">
+                <div>
+                    <a href="{{route('comics.index') }}" class="btn btn-outline-secondary ">Indietro</a>
+                </div>
+                <div class="d-flex gap-2">
+                    <a href="{{route('comics.edit', ['comic'=>$comic->id]) }}" class="btn btn-warning"><i class="fa-solid fa-file-pen"></i></a>
+                    <form action="{{route('comics.destroy', ['comic'=>$comic->id]) }}" method="POST">
+                        @csrf
+                        @method('DELETE')
+                        <a href="" class="btn btn-danger"><i class="fa-solid fa-trash-can"></i></a>
+                    </form>
+                </div>
+            </div>
+
+
+
+
         </div>
-
-
-        <a href="{{route('comics.index') }}"><i class="fa-solid fa-caret-left fs-1" style="color: black;"></i></a>
-
     </div>
-</div>
-@endsection
+    @endsection

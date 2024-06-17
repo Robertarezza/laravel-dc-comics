@@ -32,10 +32,17 @@
                 <td>{{$comic->type}}</td>
                 <td>{{$comic->price}}</td>
                 <td class="d-flex gap-2">
-                    <a href="{{route('comics.show', ['comic'=>$comic->id]) }}" class="btn btn-success">Dettagli</a>
-                    <a href="{{route('comics.edit', ['comic'=>$comic->id]) }}" class="btn btn-warning">Modifica</a>
+                    <a href="{{route('comics.show', ['comic'=>$comic->id]) }}" class="btn btn-success"><i class="fa-solid fa-circle-info"></i></a>
+                    <a href="{{route('comics.edit', ['comic'=>$comic->id]) }}" class="btn btn-warning"><i class="fa-solid fa-file-pen"></i></a>
+                    <form action="{{route('comics.destroy', ['comic'=>$comic->id]) }}" method="POST">
+                        @csrf
+                        @method('DELETE')
+                        <button class="btn btn-danger"><i class="fa-solid fa-trash-can "></i></button>
+                       
+                    </form>
+                    
                 </td>
-                <!-- <td>{{$comic->description}}</td> -->
+                
             </tr>
             @endforeach
 

@@ -24,10 +24,8 @@ a{
     background-color: #d7d7d7 !important;
 } 
 
-.agg_comic:hover {
-    border-bottom: 2px solid blue;
-    padding-bottom: 25px; 
-    color: blue;
+.agg_comic{
+    border: none;
 }
 
 
@@ -38,4 +36,106 @@ a{
     padding: 0;
     width: 100%;
     background-size: cover;
+}
+
+//hover Dettagli
+.btn-success {
+    position: relative; /* Posizione relativa per il posizionamento del testo */
+    color: white; /* Colore del testo */
+    text-decoration: none; /* Rimuovere sottolineato */
+    transition: color 0.3s, background-color 0.3s; /* Transizione del colore e sfondo */
+
+    border: none; /* Rimuovere il bordo */
+    padding: 10px 20px; /* Padding interno */
+    cursor: pointer; /* Cambiare il cursore al passaggio del mouse */
+    display: inline-block; /* Mostra come blocco inline */
+}
+
+.btn-success:hover {
+    color: white; /* Cambia il colore del testo all'hover */
+    background-color: #28a745; /* Cambia il colore di sfondo all'hover */
+}
+
+.btn-success:hover::after {
+    content: " Dettagli"; /* Aggiungi testo "Dettagli" all'hover */
+    position: absolute; /* Posizione assoluta */
+    top: 50%; /* Sposta il testo sotto il link */
+    left: 50%; /* Allinea il testo a sinistra */
+
+    transform: translate(-50%, -50%); /* Centra il testo rispetto al pulsante */
+    //width: 200%; /* Larghezza al 100% del link */
+    background-color: #28a745; /* Colore di sfondo */
+    color: white; /* Colore del testo */
+    padding: 5px; /* Spazio interno */
+    font-size: 12px; /* Dimensione del font */
+    text-align: center; /* Allinea il testo al centro */
+
+    white-space: nowrap; /* Evita il riavvolgimento del testo */
+}
+
+//hover Modifica
+
+.btn-warning {
+    position: relative; /* Posizione relativa per il posizionamento del testo */
+    color: white; /* Colore del testo */
+    text-decoration: none; /* Rimuovere sottolineato */
+    transition: color 0.3s, background-color 0.3s; /* Transizione del colore e sfondo */
+
+    border: none; /* Rimuovere il bordo */
+    padding: 10px 20px; /* Padding interno */
+    cursor: pointer; /* Cambiare il cursore al passaggio del mouse */
+    display: inline-block; /* Mostra come blocco inline */
+}
+
+.btn-warning:hover {
+    color: white; /* Cambia il colore del testo all'hover */
+    background-color: #ffc107; /* Cambia il colore di sfondo all'hover */
+}
+
+.btn-warning:hover::after {
+    content: " Modifica"; /* Aggiungi testo "Modifica" all'hover */
+    position: absolute; /* Posizione assoluta */
+    top: 50%; /* Sposta il testo sotto il link */
+    left: 50%; /* Allinea il testo a sinistra */
+
+    transform: translate(-50%, -50%); /* Centra il testo rispetto al pulsante */
+   // width: 200%; /* Larghezza al 100% del link */
+    background-color: #ffc107; /* Colore di sfondo */
+    color: white; /* Colore del testo */
+    padding: 5px; /* Spazio interno */
+    font-size: 12px; /* Dimensione del font */
+    text-align: center; /* Allinea il testo al centro */
+
+    white-space: nowrap; /* Evita il riavvolgimento del testo */
+}
+
+//hover cancello
+.btn-danger {
+    position: relative; /* Posizione relativa per il posizionamento del testo */
+    color: white; /* Colore del testo */
+    text-decoration: none; /* Rimuovere sottolineato */
+    transition: color 0.3s, background-color 0.3s; /* Transizione del colore e sfondo */
+    border: none; /* Rimuovere il bordo */
+    padding: 10px 20px; /* Padding interno */
+    cursor: pointer; /* Cambiare il cursore al passaggio del mouse */
+    display: inline-block; /* Mostra come blocco inline */
+}
+
+.btn-danger:hover {
+    color: white; /* Cambia il colore del testo all'hover */
+    background-color: #dc3545; /* Cambia il colore di sfondo all'hover */
+}
+
+.btn-danger:hover::after {
+    content: " Elimina"; /* Aggiungi testo "Elimina" all'hover */
+    position: absolute; /* Posizione assoluta */
+    top: 50%; /* Sposta il testo a metà dell'altezza */
+    left: 50%; /* Sposta il testo a metà della larghezza */
+    transform: translate(-50%, -50%); /* Centra il testo rispetto al pulsante */
+    background-color: #dc3545; /* Colore di sfondo */
+    color: white; /* Colore del testo */
+    padding: 5px; /* Spazio interno */
+    font-size: 14px; /* Dimensione del font */
+    text-align: center; /* Allinea il testo al centro */
+    white-space: nowrap; /* Evita il riavvolgimento del testo */
 }
