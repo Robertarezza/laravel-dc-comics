@@ -20,18 +20,21 @@
             @foreach ( $comicList as $comic )
             <tr>
                 <th scope="row">{{$comic->id}}</th>
-               
-                    <td class="d-flex">
-                        <img src="{{$comic->image}}" alt="" class="w-25 me-2">
 
-                        {{$comic->title}}
-                    </td>
-               
+                <td class="d-flex">
+                    <img src="{{$comic->image}}" alt="" class="w-25 me-2">
+
+                    {{$comic->title}}
+                </td>
+
                 <td>{{$comic->series}}</td>
                 <td>{{$comic->sale_date}}</td>
                 <td>{{$comic->type}}</td>
                 <td>{{$comic->price}}</td>
-                <td><button type="submit" class="btn btn-success"><a href="{{route('comics.show', ['comic'=>$comic->id]) }}">Dettagli</a></button></td>
+                <td class="d-flex gap-2">
+                    <a href="{{route('comics.show', ['comic'=>$comic->id]) }}" class="btn btn-success">Dettagli</a>
+                    <a href="{{route('comics.edit', ['comic'=>$comic->id]) }}" class="btn btn-warning">Modifica</a>
+                </td>
                 <!-- <td>{{$comic->description}}</td> -->
             </tr>
             @endforeach
