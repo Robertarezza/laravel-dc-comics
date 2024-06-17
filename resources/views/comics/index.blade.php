@@ -7,12 +7,14 @@
         <thead>
             <tr>
                 <th scope="col">Id</th>
-                <th scope="col">Title</th>
+                <th scope="col" class="w-25">Title</th>
                 <th scope="col">Series</th>
                 <th scope="col" class="w-25">Sale Date</th>
                 <th scope="col" class="w-25">Type</th>
                 <th scope="col">Price</th>
                 <th scope="col">Actions</th>
+                <th scope="col"></th>
+                <th scope="col"></th>
                 <!-- <th scope="col">Description</th> -->
             </tr>
         </thead>
@@ -31,20 +33,23 @@
                 <td>{{$comic->sale_date}}</td>
                 <td>{{$comic->type}}</td>
                 <td>{{$comic->price}}</td>
-                <td class="d-flex gap-2">
-                    <a href="{{route('comics.show', ['comic'=>$comic->id]) }}" class="btn btn-success"><i class="fa-solid fa-circle-info"></i></a>
-                    <a href="{{route('comics.edit', ['comic'=>$comic->id]) }}" class="btn btn-warning"><i class="fa-solid fa-file-pen"></i></a>
+                <td >
+                 <a href="{{route('comics.show', ['comic'=>$comic->id]) }}" class="btn btn-success"><i class="fa-solid fa-circle-info"></i></a> 
+                    
+                </td>
+                <td><a href="{{route('comics.edit', ['comic'=>$comic->id]) }}" class="btn btn-warning"><i class="fa-solid fa-file-pen"></i></a></td>
+                 <td>
                     <form action="{{route('comics.destroy', ['comic'=>$comic->id]) }}" method="POST">
                         @csrf
                         @method('DELETE')
                         <button class="btn btn-danger"><i class="fa-solid fa-trash-can "></i></button>
-                       
+
                     </form>
-                    
                 </td>
-                
+
             </tr>
             @endforeach
+
 
         </tbody>
     </table>
