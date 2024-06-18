@@ -28,17 +28,10 @@
                 </div>
                 <div class="d-flex gap-2">
                     <a href="{{route('comics.edit', ['comic'=>$comic->id]) }}" class="btn btn-warning"><i class="fa-solid fa-file-pen"></i></a>
-                    <form action="{{route('comics.destroy', ['comic'=>$comic->id]) }}" method="POST">
-                        @csrf
-                        @method('DELETE')
-                        <button class="btn btn-danger"><i class="fa-solid fa-trash-can " ></i></button>
-                    </form>
+                   @include('partials.form_delete')
                 </div>
             </div>
-
-
-
-
         </div>
     </div>
+    @include('partials.modal_delete')
     @endsection
