@@ -4,6 +4,7 @@ namespace App\Http\Controllers\Admin;
 use Carbon\Carbon;
 
 use App\Http\Controllers\Controller;
+use App\Http\Requests\StoreComicRequest;
 use App\Models\Comic;
 use Illuminate\Http\Request;
 
@@ -29,7 +30,7 @@ class ComicController extends Controller
     /**
      * Store a newly created resource in storage.
      */
-    public function store(Request $request)
+    public function store(StoreComicRequest $request)
     {
         $data= $request->all();
         $comic= new Comic();
