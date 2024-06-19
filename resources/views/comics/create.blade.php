@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
 @section('content')
-<div class="container">
+<div class="container" style="margin-top:100px;">
   <h3>Aggiungi un nuovo Comic all'archivio</h3>
 
   @if ($errors->any()) 
@@ -58,9 +58,9 @@
       <textarea class="form-control" id="description" name="description" rows="3"> {{old('description')}}</textarea>
     </div>
 
-    <div class="d-flex justify-content-around mt-3 mb-3 align-content-center">
+    <div class="d-flex justify-content-around mt-3 mb-3 align-content-center align-items-center">
       <a href="{{route('comics.index') }}" class="btn btn-outline-secondary ">Indietro</a>
-      <button class="btn btn-primary" type="submit">Salva</button>
+      <button class="btn btn-outline-primary" type="submit">Salva</button>
     </div>
   </form>
 

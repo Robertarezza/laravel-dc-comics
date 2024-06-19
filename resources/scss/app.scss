@@ -12,6 +12,8 @@ a{
      background-position: center center;
      background-size: cover;
      height: 85vh;
+     margin-top: 100px;
+   
     
 }
 
@@ -29,13 +31,24 @@ a{
 }
 
 
-.my_show{
-    background-image: url('../img/sfondo_dett.jpg') ;
-    height: 90vh;
-    margin: 0;
-    padding: 0;
-    width: 100%;
-    background-size: cover;
+// .my_show{
+    
+//     position: relative;
+//     background-size: cover;
+//     background-position: center;
+//     background-repeat: no-repeat;
+//     height: 90vh;
+//     margin: 0;
+//     padding: 0;
+//     width: 100%;
+//     margin-top: 80px;
+//     filter: brightness(0.9) opacity(0.5); /* Riduce la luminosità e aumenta la trasparenza */
+    
+    
+//}
+
+.my_index{
+    margin-top: 100px;
 }
 
 //hover Dettagli
@@ -46,9 +59,10 @@ a{
     transition: color 0.3s, background-color 0.3s; /* Transizione del colore e sfondo */
 
     border: none; /* Rimuovere il bordo */
-    padding: 10px 20px; /* Padding interno */
+    padding: 7px 20px; /* Padding interno */
     cursor: pointer; /* Cambiare il cursore al passaggio del mouse */
     display: inline-block; /* Mostra come blocco inline */
+    z-index: 2;
 }
 
 .btn-success:hover {
@@ -82,9 +96,10 @@ a{
     transition: color 0.3s, background-color 0.3s; /* Transizione del colore e sfondo */
 
     border: none; /* Rimuovere il bordo */
-    padding: 10px 20px; /* Padding interno */
+    padding: 7px 20px; /* Padding interno */
     cursor: pointer; /* Cambiare il cursore al passaggio del mouse */
     display: inline-block; /* Mostra come blocco inline */
+    z-index: 2;
 }
 
 .btn-warning:hover {
@@ -116,9 +131,10 @@ a{
     text-decoration: none; /* Rimuovere sottolineato */
     transition: color 0.3s, background-color 0.3s; /* Transizione del colore e sfondo */
     border: none; /* Rimuovere il bordo */
-    padding: 10px 20px; /* Padding interno */
+    padding: 7px 20px; /* Padding interno */
     cursor: pointer; /* Cambiare il cursore al passaggio del mouse */
     display: inline-block; /* Mostra come blocco inline */
+    z-index: 2;
 }
 
 .btn-danger:hover {

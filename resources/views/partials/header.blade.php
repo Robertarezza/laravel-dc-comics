@@ -1,5 +1,5 @@
-<header style="position: fix">
-  <nav class="navbar navbar-expand-lg bg-light my_nav">
+<header  class="">
+  <nav class="navbar navbar-expand-lg bg-light my_nav container-fluid mb-5" style="position: fixed; top: 0; z-index:999;">
     <div class="container-fluid">
     <a class="navbar-brand" href="#">
       <img src="{{ Vite::asset('resources/img/logo.jpg') }}" alt="Bootstrap" width="85" height="50" class="logo">

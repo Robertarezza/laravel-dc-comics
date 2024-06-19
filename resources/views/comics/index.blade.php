@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
 @section('content')
-<div class="container">
+<div class="container my_index">
     <h1>Lista fumetti</h1>
     <table class="table">
         <thead>
